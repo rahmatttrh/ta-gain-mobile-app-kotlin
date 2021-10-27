@@ -17,6 +17,9 @@
     - ⚡ NIM 171011400893</br>
     - ⚡ Prodi Teknik Informatika</br>
     - ⚡ Fakultas Teknik Universitas Pamulang</br><br>
+    
+<summary><strong>Dosen Pembimbing</strong></summary>
+- ⚡ Fitri Yanti S,Kom. M,Kom</br>
 
 
 
