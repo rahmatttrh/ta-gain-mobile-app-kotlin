@@ -5,7 +5,7 @@
 ### Judul : Pengembangan Sistem Monitoring dan Pelaporan Proses Pembangunan Tower Telekomunikasi Berbasis Web dan Android di PT GAIN
 
 <p>
-    <img src="https://img.shields.io/badge/Language-Kotlin%208-blue" />
+    <img src="https://img.shields.io/badge/Language-Kotlin-blue" />
     <img src="https://img.shields.io/badge/Developer-Rahmat-brightgreen" />
     <img src="https://img.shields.io/badge/Platform-Android-red" />
 </p>
