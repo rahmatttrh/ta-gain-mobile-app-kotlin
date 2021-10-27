@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:paddingHorizontal="15dp"-->
+
+<!--        android:paddingVertical="10dp"-->
+<!--        >-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            android:layout_marginRight="15dp"
+            >
+            <ImageView
+                android:id="@+id/ivReportFoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/signal"
+
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvJudulFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto Depan"
+                android:textSize="18sp"
+                android:textColor="#555"
+                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tvDeskripsiFoto"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Deskripsi Foto"-->
+<!--                android:textSize="18sp" />-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStatusWaiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:cardElevation="0dp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                app:cardBackgroundColor="#c1c1c1"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvStatusWaiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="2dp"
+                    android:text="Waiting"
+                    android:textSize="11sp"
+                    android:textColor="#fff" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStatusReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="2dp"
+                app:cardBackgroundColor="#ff8882"
+                app:cardCornerRadius="12dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvStatusReject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="2dp"
+                    android:text="Rejected"
+                    android:textSize="11sp"
+                    android:textColor="#fff" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStatusApprove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:cardElevation="0dp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+
+                app:cardBackgroundColor="#96bb7c"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvStatusApprove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="2dp"
+                    android:text="Approved"
+                    android:textSize="11sp"
+                    android:textColor="#fff" />
+            </androidx.cardview.widget.CardView>
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:background="#f3f3f3" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

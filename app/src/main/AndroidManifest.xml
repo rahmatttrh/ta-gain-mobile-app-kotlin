@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ta_gain">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/signal3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TaGain"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustResize">
+        <activity android:name=".activity.WalletActivity"></activity>
+        <activity android:name=".activity.CompleteActivity" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.FinishActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.FormReportActivity" />
+        <activity android:name=".activity.ListReportActivity" />
+        <activity android:name=".activity.ReportActivity" />
+        <activity android:name=".activity.DetailOrderActivity" />
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.SplashActivity">
+<!--        <activity android:name=".MainActivity">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
